@@ -399,7 +399,7 @@ const LinksSection = ({ id, title, items }) => {
 
 export const MainLinks = () => {
   return (
-    <div id="resources" className="mx-auto max-w-7xl px-6 pb-24">
+    <div id="resources" className="mx-auto max-w-7xl scroll-mt-32 px-6 pb-24">
       {Object.entries(LINKS_DATA).map(([key, section]) => (
         <LinksSection
           key={key}
