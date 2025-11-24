@@ -1,27 +1,25 @@
-/* eslint-disable @next/next/no-img-element */
-
-export function Footer() {
+export const Footer = () => {
   return (
-    <footer className="mt-12 bg-[#292929] text-sm text-white">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-12">
-        <img
-          src="https://s11.flagcounter.com/mini/99jm/bg_FFFFFF/txt_000000/border_CCCCCC/flags_0/"
-          alt="Flag Counter"
-          border="0"
-        />
-
-        <p>
-          Desenvolvido com ❤️ por{" "}
-          <a
-            href="https://github.com/leonardvsc"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-500"
-          >
-            Leonardo Victor
-          </a>
-        </p>
+    <footer className="border-t border-white/10 bg-[#020202]">
+      <div className="mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between">
+        <div className="flex justify-center space-x-6 md:order-2">
+          <span className="text-sm text-zinc-500">
+            © 2024 FrontEditor. All rights reserved.
+          </span>
+        </div>
+        <div className="mt-8 md:order-1 md:mt-0">
+          <p className="text-center text-sm leading-5 text-zinc-500 md:text-left">
+            Desenvolvido com <span className="text-red-500">❤️</span> por{" "}
+            <a
+              href="https://github.com/leonardvsc"
+              target="_blank"
+              className="font-medium text-blue-500 hover:text-blue-400"
+            >
+              Leonardo Victor
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
-}
+};

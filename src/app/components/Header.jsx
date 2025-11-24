@@ -3,28 +3,33 @@ import {
   RiInstagramLine,
   RiTwitterXLine,
 } from "@remixicon/react";
-import Image from "next/image";
-import Link from "next/link";
 
-export function Header() {
+export const Header = () => {
   return (
-    <header className="fixed top-0 z-50 w-full bg-[#292929]">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-6 lg:px-8">
-        <Link href={"/"}>
-          <Image src={"/logo.svg"} alt="Logo" width={200} height={43} />
-        </Link>
-        <NavSocial />
+    <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-[#050505]/80 backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <a href="/" className="flex items-center gap-2">
+          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-lg font-bold text-white">
+            Qb
+          </div>
+          <span className="text-lg font-semibold tracking-tight text-white">
+            Quickblank
+          </span>
+        </a>
+        <div className="flex gap-3">
+          <SocialBtn icon="Github" />
+          <SocialBtn icon="Instagram" />
+          <SocialBtn icon="Twitter" />
+        </div>
       </div>
     </header>
   );
-}
+};
 
-function NavSocial() {
-  return (
-    <div className="flex gap-2 rounded-full bg-zinc-700 p-2 px-4">
-      <RiGithubLine size={24} className="text-white" />
-      <RiInstagramLine size={24} className="text-pink-600" />
-      <RiTwitterXLine size={24} className="text-blue-500" />
-    </div>
-  );
-}
+const SocialBtn = ({ icon }) => (
+  <button className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 bg-white/5 text-zinc-400 transition-colors hover:border-white/20 hover:bg-white/10 hover:text-white">
+    {icon === "Github" && <RiGithubLine />}
+    {icon === "Instagram" && <RiInstagramLine />}
+    {icon === "Twitter" && <RiTwitterXLine />}
+  </button>
+);

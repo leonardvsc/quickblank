@@ -1,33 +1,26 @@
-const links = [
-  { name: "Cheatsheets", href: "#cheatsheets" },
-  { name: "Artificial Intelligences", href: "#ai" },
-  { name: "Programming", href: "#programming" },
-  { name: "Tailwind CSS", href: "#tailwind" },
-  { name: "Design", href: "#design" },
-  { name: "Toolkit", href: "#toolkit" },
-];
+import { LINKS_DATA } from "./MainLinks";
 
-export function SubMenuMain() {
+export const SubMenuMain = () => {
+  const menuLinks = Object.entries(LINKS_DATA).map(([key, section]) => ({
+    name: section.title,
+    href: `#${key}`,
+  }));
+
   return (
-    <section className="">
-      <div className="mx-auto flex flex-col gap-2 bg-gradient-to-r from-[#0f48a1] to-[#5371d3] py-12">
-        <div className="mb-4">
-          <h3 className="text-center text-lg font-bold text-white lg:text-3xl">
-            Encontre o que você precisa!
-          </h3>
-        </div>
-        <div className="flex flex-wrap justify-center gap-2">
-          {links.map((link) => (
+    <div className="sticky top-20 z-40 mx-auto mb-12 max-w-7xl px-6">
+      <div className="flex w-full justify-center">
+        <div className="inline-flex items-center gap-1 overflow-x-visible rounded-full border border-white/10 bg-[#0a0a0a]/80 p-1 shadow-xl shadow-black/50 backdrop-blur-xl">
+          {menuLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="block rounded bg-[#0f48a1] px-4 py-2 text-sm font-medium text-[#b6d4ff] duration-300 hover:text-white hover:shadow-lg"
+              className="rounded-full px-4 py-2 text-sm font-medium text-zinc-400 transition-all hover:bg-white/10 hover:text-white"
             >
               {link.name}
             </a>
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
-}
+};
