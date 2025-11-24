@@ -9,3 +9,13 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
 }
+
+/* Ocultar scrollbars em todos os navegadores */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE e Edge */
+  scrollbar-width: none; /* Firefox */
+}
