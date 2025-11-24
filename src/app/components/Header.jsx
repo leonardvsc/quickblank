@@ -3,18 +3,14 @@ import {
   RiInstagramLine,
   RiTwitterXLine,
 } from "@remixicon/react";
+import Image from "next/image";
 
 export const Header = () => {
   return (
     <header className="fixed top-0 z-50 w-full border-b border-white/5 bg-[#050505]/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         <a href="/" className="flex items-center gap-2">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600 text-lg font-bold text-white">
-            Qb
-          </div>
-          <span className="text-lg font-semibold tracking-tight text-white">
-            Quickblank
-          </span>
+          <Image src="/logo.svg" alt="Logo" width={190} height={40} />
         </a>
         <div className="flex gap-3">
           <SocialBtn icon="Github" />
