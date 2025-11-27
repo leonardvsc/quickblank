@@ -318,19 +318,11 @@ export const LINKS_DATA = {
     title: "Developer Tools",
     items: [
       {
-        name: "Postman",
-        href: "https://www.postman.com/",
-        bgColor: "#ff6c37",
-        description: "Plataforma de API para construir e usar APIs.",
-        icon: SiPostman,
-      },
-      {
-        name: "Docker",
-        href: "https://www.docker.com/",
-        bgColor: "#2496ed",
-        description:
-          "Plataforma para desenvolver, enviar e executar aplicações em contêineres.",
-        icon: SiDocker,
+        name: "Insomnia",
+        href: "https://insomnia.rest/",
+        bgColor: "#5849be",
+        description: "Design e teste de APIs REST, GraphQL, gRPC e mais.",
+        icon: SiInsomnia,
       },
       {
         name: "Git",
@@ -341,11 +333,12 @@ export const LINKS_DATA = {
         icon: SiGit,
       },
       {
-        name: "Insomnia",
-        href: "https://insomnia.rest/",
-        bgColor: "#5849be",
-        description: "Design e teste de APIs REST, GraphQL, gRPC e mais.",
-        icon: SiInsomnia,
+        name: "Docker",
+        href: "https://www.docker.com/",
+        bgColor: "#2496ed",
+        description:
+          "Plataforma para desenvolver, enviar e executar aplicações em contêineres.",
+        icon: SiDocker,
       },
       {
         name: "Dev Resources",
