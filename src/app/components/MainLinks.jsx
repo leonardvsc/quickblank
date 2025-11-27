@@ -1,4 +1,47 @@
 import { RiArrowRightSLine } from "@remixicon/react";
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiMongodb,
+  SiPm2,
+  SiMdnwebdocs,
+  SiW3Schools,
+  SiFreecodecamp,
+  SiCodesandbox,
+  SiStackblitz,
+  SiReact,
+  SiTailwindcss,
+  SiAuth0,
+  SiPostman,
+  SiDocker,
+  SiGit,
+  SiInsomnia,
+  SiOpenai,
+  SiAnthropic,
+  SiMicrosoft,
+  SiVercel,
+  SiFigma,
+  SiCanva,
+  SiPenpot,
+  SiNotion,
+  SiObsidian,
+  SiLinear,
+  SiGreensock,
+  SiFramer,
+  SiThreedotjs,
+  SiNextdotjs,
+} from "react-icons/si";
+import {
+  FaBook,
+  FaCloud,
+  FaPalette,
+  FaRobot,
+  FaTools,
+  FaLock,
+  FaMagic,
+  FaWhatsapp,
+} from "react-icons/fa";
 
 export const LINKS_DATA = {
   cheatsheets: {
@@ -10,6 +53,7 @@ export const LINKS_DATA = {
         bgColor: "#fc480b",
         description:
           "Referência rápida com todas as tags e atributos HTML essenciais.",
+        icon: SiHtml5,
       },
       {
         name: "CSS",
@@ -17,6 +61,7 @@ export const LINKS_DATA = {
         bgColor: "#264ee4",
         description:
           "Guia completo de propriedades CSS3 e seletores para estilização.",
+        icon: SiCss3,
       },
       {
         name: "JavaScript",
@@ -25,6 +70,7 @@ export const LINKS_DATA = {
         bgColor: "#f7e018",
         description:
           "Sintaxe e métodos JavaScript fundamentais em um só lugar.",
+        icon: SiJavascript,
       },
       {
         name: "ES6",
@@ -33,6 +79,7 @@ export const LINKS_DATA = {
         bgColor: "#f7e018",
         description:
           "Recursos modernos do ES6+ como arrow functions e destructuring.",
+        icon: SiJavascript,
       },
       {
         name: "MongoDB",
@@ -40,12 +87,14 @@ export const LINKS_DATA = {
         bgColor: "#169b48",
         description:
           "Comandos e operações essenciais para trabalhar com MongoDB.",
+        icon: SiMongodb,
       },
       {
         name: "PM2",
         href: "https://quickref.me/pm2",
         bgColor: "#190f4b",
         description: "Gerenciamento de processos Node.js em produção com PM2.",
+        icon: SiPm2,
       },
     ],
   },
@@ -58,13 +107,16 @@ export const LINKS_DATA = {
         bgColor: "#24282b",
         description:
           "Documentação unificada de diversas tecnologias em uma interface rápida.",
+        icon: FaBook,
       },
       {
         name: "MDN",
         href: "https://developer.mozilla.org/pt-BR/",
         bgColor: "#90b4f9",
+        textColor: "#000000",
         description:
           "Referência completa e confiável para web standards e APIs.",
+        icon: SiMdnwebdocs,
       },
       {
         name: "W3Schools",
@@ -72,6 +124,7 @@ export const LINKS_DATA = {
         bgColor: "#07a86d",
         description:
           "Tutoriais práticos com exemplos interativos para aprender desenvolvimento web.",
+        icon: SiW3Schools,
       },
       {
         name: "FreeCodeCamp",
@@ -79,6 +132,7 @@ export const LINKS_DATA = {
         bgColor: "#1b1c31",
         description:
           "Plataforma completa de aprendizado com certificações gratuitas.",
+        icon: SiFreecodecamp,
       },
       {
         name: "KodeKloud Free Labs",
@@ -86,6 +140,7 @@ export const LINKS_DATA = {
         bgColor: "#1ab7fd",
         description:
           "Laboratórios práticos gratuitos para DevOps e cloud computing.",
+        icon: FaCloud,
       },
     ],
   },
@@ -99,6 +154,7 @@ export const LINKS_DATA = {
         textColor: "#000000",
         description:
           "Ambiente de desenvolvimento online para criar e compartilhar projetos web.",
+        icon: SiCodesandbox,
       },
       {
         name: "StackBlitz",
@@ -106,6 +162,7 @@ export const LINKS_DATA = {
         bgColor: "#1575f0",
         description:
           "IDE online instantânea com suporte completo a frameworks modernos.",
+        icon: SiStackblitz,
       },
     ],
   },
@@ -119,6 +176,7 @@ export const LINKS_DATA = {
         textColor: "#f7f7f7",
         description:
           "Coleção de componentes e padrões React prontos para usar.",
+        icon: SiReact,
       },
       {
         name: "React Just Parallax",
@@ -127,6 +185,7 @@ export const LINKS_DATA = {
         textColor: "#000000",
         description:
           "Componente React para criar efeitos parallax suaves e performáticos.",
+        icon: SiReact,
       },
       {
         name: "DriverJS",
@@ -135,6 +194,7 @@ export const LINKS_DATA = {
         textColor: "#000000",
         description:
           "Biblioteca para criar tours guiados e destacar elementos na página.",
+        icon: FaMagic,
       },
     ],
   },
@@ -147,6 +207,7 @@ export const LINKS_DATA = {
         bgColor: "#3758f9",
         description:
           "Componentes UI prontos e customizáveis feitos com Tailwind CSS.",
+        icon: SiTailwindcss,
       },
       {
         name: "TailGrids",
@@ -154,6 +215,7 @@ export const LINKS_DATA = {
         bgColor: "#3658f8",
         description:
           "Biblioteca de mais de 600 componentes e templates Tailwind CSS.",
+        icon: SiTailwindcss,
       },
       {
         name: "Preline",
@@ -161,6 +223,7 @@ export const LINKS_DATA = {
         bgColor: "#2563ea",
         description:
           "Framework UI open-source com componentes Tailwind modernos.",
+        icon: SiTailwindcss,
       },
       {
         name: "KitWind",
@@ -168,6 +231,7 @@ export const LINKS_DATA = {
         bgColor: "#4d51bf",
         description:
           "Kits completos de componentes e templates Tailwind para projetos.",
+        icon: SiTailwindcss,
       },
       {
         name: "Tailwind Toolbox",
@@ -175,6 +239,7 @@ export const LINKS_DATA = {
         bgColor: "#3b7976",
         description:
           "Templates e componentes Tailwind gratuitos para seus projetos.",
+        icon: SiTailwindcss,
       },
       {
         name: "TweakCN",
@@ -182,6 +247,35 @@ export const LINKS_DATA = {
         bgColor: "#1e293b",
         description:
           "Biblioteca de componentes shadcn/ui com variações e estilos.",
+        icon: SiTailwindcss,
+      },
+    ],
+  },
+  animation: {
+    title: "Animation",
+    items: [
+      {
+        name: "Framer Motion",
+        href: "https://www.framer.com/motion/",
+        bgColor: "#0055ff",
+        description: "Biblioteca de animação pronta para produção para React.",
+        icon: SiFramer,
+      },
+      {
+        name: "Three.js",
+        href: "https://threejs.org/",
+        bgColor: "#000000",
+        description:
+          "Biblioteca JavaScript 3D que facilita a criação de gráficos 3D no navegador.",
+        icon: SiThreedotjs,
+      },
+      {
+        name: "GSAP",
+        href: "https://greensock.com/gsap/",
+        bgColor: "#88ce02",
+        textColor: "#000000",
+        description: "Biblioteca de animação JavaScript de alto desempenho.",
+        icon: SiGreensock,
       },
     ],
   },
@@ -189,11 +283,34 @@ export const LINKS_DATA = {
     title: "Security & Authentication",
     items: [
       {
+        name: "NextAuth.js",
+        href: "https://next-auth.js.org/",
+        bgColor: "#000000",
+        description: "Autenticação para a Web. Gratuito e de código aberto.",
+        icon: FaLock,
+      },
+      {
+        href: "https://authjs.dev/",
+        name: "Auth.js",
+        bgColor: "#000000",
+        description: "Autenticação para a Web. Gratuito e de código aberto.",
+        icon: FaLock,
+      },
+      {
+        href: "https://auth0.com/",
+        name: "Auth0",
+        bgColor: "#eb5424",
+        description:
+          "Plataforma de autenticação e autorização flexível e fácil de implementar.",
+        icon: SiAuth0,
+      },
+      {
         href: "https://www.better-auth.com/",
         name: "Better Auth",
         bgColor: "#0d1117",
         description:
           "Biblioteca de autenticação moderna e segura para aplicações web.",
+        icon: FaLock,
       },
     ],
   },
@@ -201,11 +318,96 @@ export const LINKS_DATA = {
     title: "Developer Tools",
     items: [
       {
+        name: "Postman",
+        href: "https://www.postman.com/",
+        bgColor: "#ff6c37",
+        description: "Plataforma de API para construir e usar APIs.",
+        icon: SiPostman,
+      },
+      {
+        name: "Docker",
+        href: "https://www.docker.com/",
+        bgColor: "#2496ed",
+        description:
+          "Plataforma para desenvolver, enviar e executar aplicações em contêineres.",
+        icon: SiDocker,
+      },
+      {
+        name: "Git",
+        href: "https://git-scm.com/",
+        bgColor: "#f05032",
+        description:
+          "Sistema de controle de versão distribuído gratuito e de código aberto.",
+        icon: SiGit,
+      },
+      {
+        name: "Insomnia",
+        href: "https://insomnia.rest/",
+        bgColor: "#5849be",
+        description: "Design e teste de APIs REST, GraphQL, gRPC e mais.",
+        icon: SiInsomnia,
+      },
+      {
         name: "Dev Resources",
         href: "https://devresourc.es/",
         bgColor: "#111111",
         description:
           "Coleção curada de recursos e ferramentas para desenvolvedores.",
+        icon: FaTools,
+      },
+    ],
+  },
+  productivity: {
+    title: "Productivity",
+    items: [
+      {
+        name: "Notion",
+        href: "https://www.notion.so/",
+        bgColor: "#000000",
+        description:
+          "Espaço de trabalho tudo-em-um para anotações, tarefas e bancos de dados.",
+        icon: SiNotion,
+      },
+      {
+        name: "Obsidian",
+        href: "https://obsidian.md/",
+        bgColor: "#7c3aed",
+        description: "Base de conhecimento pessoal poderosa e extensível.",
+        icon: SiObsidian,
+      },
+      {
+        name: "Linear",
+        href: "https://linear.app/",
+        bgColor: "#5e6ad2",
+        description:
+          "Ferramenta de rastreamento de problemas e gerenciamento de projetos.",
+        icon: SiLinear,
+      },
+    ],
+  },
+  designTools: {
+    title: "Design Tools",
+    items: [
+      {
+        name: "Figma",
+        href: "https://www.figma.com/",
+        bgColor: "#f24e1e",
+        description: "A ferramenta de design de interface colaborativa.",
+        icon: SiFigma,
+      },
+      {
+        name: "Canva",
+        href: "https://www.canva.com/",
+        bgColor: "#00c4cc",
+        description: "Ferramenta de design gráfico online gratuita.",
+        icon: SiCanva,
+      },
+      {
+        name: "Penpot",
+        href: "https://penpot.app/",
+        bgColor: "#000000",
+        description: "Ferramenta de design e prototipagem de código aberto.",
+        icon: SiPenpot,
       },
     ],
   },
@@ -218,6 +420,7 @@ export const LINKS_DATA = {
         bgColor: "#00ab6c",
         description:
           "Banco de imagens, vídeos e músicas gratuitas e livres de direitos.",
+        icon: FaPalette,
       },
       {
         name: "Fontjoy",
@@ -225,6 +428,7 @@ export const LINKS_DATA = {
         bgColor: "#0e1ebd",
         description:
           "Gerador de combinações de fontes usando aprendizado de máquina.",
+        icon: FaPalette,
       },
     ],
   },
@@ -237,6 +441,7 @@ export const LINKS_DATA = {
         bgColor: "rgb(74 161 129 / 1)",
         description:
           "Assistente de IA versátil da OpenAI para conversas e tarefas diversas.",
+        icon: SiOpenai,
       },
       {
         name: "Claude AI",
@@ -244,6 +449,7 @@ export const LINKS_DATA = {
         bgColor: "#2c2b27",
         description:
           "IA da Anthropic focada em conversas naturais e análise profunda.",
+        icon: SiAnthropic,
       },
       {
         name: "Copilot",
@@ -251,12 +457,14 @@ export const LINKS_DATA = {
         bgColor: "#51388c",
         description:
           "Assistente da Microsoft integrado com ferramentas de produtividade.",
+        icon: SiMicrosoft,
       },
       {
         name: "Blackbox",
         href: "https://www.blackbox.ai/",
         bgColor: "#111111",
         description: "IA especializada em programação e busca de código.",
+        icon: FaRobot,
       },
       {
         name: "DeepSeek",
@@ -265,6 +473,7 @@ export const LINKS_DATA = {
         bgColor: "#3f7afe",
         description:
           "Modelo de IA chinês com forte capacidade em raciocínio lógico.",
+        icon: FaRobot,
       },
       {
         name: "Qwen Chat",
@@ -273,6 +482,7 @@ export const LINKS_DATA = {
         bgColor: "#615CED",
         description:
           "Assistente de IA multilíngue desenvolvido pela Alibaba Cloud.",
+        icon: FaRobot,
       },
     ],
   },
@@ -285,6 +495,7 @@ export const LINKS_DATA = {
         bgColor: "#000000",
         description:
           "Gerador de componentes UI da Vercel usando IA generativa.",
+        icon: SiVercel,
       },
       {
         name: "Lovable",
@@ -292,6 +503,7 @@ export const LINKS_DATA = {
         textColor: "#000000",
         bgColor: "#f99e23",
         description: "Plataforma para criar aplicações web completas com IA.",
+        icon: FaMagic,
       },
     ],
   },
@@ -303,12 +515,14 @@ export const LINKS_DATA = {
         href: "https://aicolors.co/",
         bgColor: "#cc44a2",
         description: "Gerador inteligente de paletas de cores usando IA.",
+        icon: FaPalette,
       },
       {
         name: "Namelix",
         href: "https://namelix.com/",
         bgColor: "#565dc7",
         description: "Criador de nomes de marca e negócios com IA.",
+        icon: FaPalette,
       },
       {
         name: "Logo AI",
@@ -316,6 +530,7 @@ export const LINKS_DATA = {
         bgColor: "#275cbe",
         description:
           "Ferramenta para gerar logotipos profissionais com inteligência artificial.",
+        icon: FaPalette,
       },
     ],
   },
@@ -328,12 +543,20 @@ export const LINKS_DATA = {
         bgColor: "#106359",
         description:
           "Gerador de links diretos para conversas no WhatsApp sem salvar contato.",
+        icon: FaWhatsapp,
       },
     ],
   },
 };
 
-const LinkCard = ({ name, href, description, bgColor, textColor }) => {
+const LinkCard = ({
+  name,
+  href,
+  description,
+  bgColor,
+  textColor,
+  icon: Icon,
+}) => {
   return (
     <a
       href={href}
@@ -349,12 +572,16 @@ const LinkCard = ({ name, href, description, bgColor, textColor }) => {
             className="flex h-10 w-10 items-center justify-center rounded-lg shadow-inner"
             style={{ backgroundColor: bgColor || "#333" }}
           >
-            <span
-              className="text-lg font-bold"
-              style={{ color: textColor || "#fff" }}
-            >
-              {name.charAt(0)}
-            </span>
+            {Icon ? (
+              <Icon size={20} style={{ color: textColor || "#fff" }} />
+            ) : (
+              <span
+                className="text-lg font-bold"
+                style={{ color: textColor || "#fff" }}
+              >
+                {name.charAt(0)}
+              </span>
+            )}
           </div>
           <RiArrowRightSLine
             className="text-zinc-600 transition-colors group-hover:text-blue-400"
