@@ -452,14 +452,7 @@ export const LINKS_DATA = {
           "Assistente da Microsoft integrado com ferramentas de produtividade.",
         icon: SiMicrosoft,
       },
-      {
-        name: "Aura Build",
-        href: "https://www.aura.build/",
-        bgColor: "#000000",
-        description:
-          "Plataforma de IA para desenvolvimento de software e produtos.",
-        icon: FaRobot,
-      },
+
       {
         name: "Blackbox",
         href: "https://www.blackbox.ai/",
@@ -497,6 +490,14 @@ export const LINKS_DATA = {
         description:
           "Gerador de componentes UI da Vercel usando IA generativa.",
         icon: SiVercel,
+      },
+      {
+        name: "Aura Build",
+        href: "https://www.aura.build/",
+        bgColor: "#000000",
+        description:
+          "Plataforma de IA para desenvolvimento de software e produtos.",
+        icon: FaRobot,
       },
       {
         name: "Lovable",
