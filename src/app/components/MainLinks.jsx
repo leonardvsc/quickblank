@@ -453,6 +453,14 @@ export const LINKS_DATA = {
         icon: SiMicrosoft,
       },
       {
+        name: "Aura Build",
+        href: "https://www.aura.build/",
+        bgColor: "#000000",
+        description:
+          "Plataforma de IA para desenvolvimento de software e produtos.",
+        icon: FaRobot,
+      },
+      {
         name: "Blackbox",
         href: "https://www.blackbox.ai/",
         bgColor: "#111111",
