@@ -470,6 +470,14 @@ export const LINKS_DATA = {
         icon: FaRobot,
       },
       {
+        name: "Z.ai",
+        href: "https://z.ai/",
+        bgColor: "#000000",
+        description:
+          "Assistente de IA para profissionais, focado em produtividade e organização.",
+        icon: FaRobot,
+      },
+      {
         name: "Qwen Chat",
         href: "https://chat.qwen.ai/",
         textColor: "#ffffff",
