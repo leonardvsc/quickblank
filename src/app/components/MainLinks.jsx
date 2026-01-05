@@ -251,6 +251,36 @@ export const LINKS_DATA = {
       },
     ],
   },
+  uiComponents: {
+    title: "UI Components",
+    items: [
+      {
+        name: "shadcn/ui",
+        href: "https://ui.shadcn.com/",
+        bgColor: "#000000",
+        description:
+          "Componentes React acessíveis e reutilizáveis construídos com Radix UI e Tailwind CSS.",
+        icon: SiReact,
+      },
+      {
+        name: "Magic UI",
+        href: "https://magicui.design/",
+        bgColor: "#0a0a0a",
+        description:
+          "Componentes React modernos e animados prontos para copiar e colar.",
+        icon: SiReact,
+      },
+      {
+        name: "Aceternity UI",
+        href: "https://ui.aceternity.com/",
+        bgColor: "#0f0f0f",
+        description:
+          "Componentes React com efeitos visuais incríveis e animações suaves.",
+        icon: SiReact,
+      },
+
+    ],
+  },
   animation: {
     title: "Animation",
     items: [
